@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>World Cup - Brazil 2014</title>
+    <meta name="description" content="">
+    <meta name="author" content="Koldo Duarte (@Koldomac)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <!-- iPhone -->
+    <link href="app/images/57x57.jpg" sizes="57x57" rel="apple-touch-icon">
+    <link href="app/images/320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <!-- iPhone (Retina) -->
+    <link href="app/images/114x114.jpg" sizes="114x114" rel="apple-touch-icon">
+    <link href="app/images/640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- iPhone 5 -->
+    <link href="app/images/640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+</head>
+<body>
+    <section id="main" data-transition="slide" data-aside="features" class="drag">
+        <header data-title="World Cup - Brazil 2014">
+            <nav>
+                <a href="#" data-view-aside="features" data-icon="menu"></a>
+            </nav>
+        </header>
+        <article id="main-article" class="list indented scroll">
+            <div class="empty">
+                <span class="icon globe"></span><br/>                
+                <small>With this App you will find useful information about Brazil World Cup 2014. You will see information about all teams, players and even information about teams where usually play.<br/><br/>You will also have access to closer data about matches, this is, matches in play, today matches, as well as tomorrow matches.<br/><br/>Enjoy it ;)</small>
+                <button data-view-section="secAbout" data-async="app/sections/secAbout.html" class="anchor" data-label="About" data-icon="info-sign"></button>
+            </div>
+        </article>
+    </section>
+    <!-- Lungo dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <!-- App dependencies -->
+    <script src="components/backbone/jquery.min.js"></script>
+    <script src="components/backbone/underscore-min.js"></script>    
+    <script src="components/backbone/backbone-min.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'World Cup - Brazil 2014',
+            version: '1.0',
+            resources: [
+                'components/templates/team.html',
+                'components/templates/team_list.html',
+                'components/templates/player.html',
+                'components/templates/player_list.html',
+                'components/templates/club.html',
+                'components/templates/match.html',
+                'components/templates/match_list.html',
+                'app/sections/secPlayersByTeam.html',
+                'app/sections/secClub.html',
+                'app/asides/features.html'],
+            history: false
+        });
+    </script>
+    <!-- App Javascripts -->
+    <script src="app/js/app.js"></script>
+    <script src="app/js/models/team.js"></script>
+    <script src="app/js/models/player.js"></script>
+    <script src="app/js/models/club.js"></script>
+    <script src="app/js/models/match.js"></script>    
+    <script src="app/js/collections/teams.js"></script>
+    <script src="app/js/collections/players.js"></script>
+    <script src="app/js/collections/matches.js"></script>
+    <script src="app/js/views/teamView.js"></script>
+    <script src="app/js/views/teamListView.js"></script>    
+    <script src="app/js/views/playerView.js"></script>
+    <script src="app/js/views/playerListView.js"></script>
+    <script src="app/js/views/clubView.js"></script>
+    <script src="app/js/views/matchView.js"></script>
+    <script src="app/js/views/matchListView.js"></script>
+    <script src="app/js/events.js"></script>    
+</body>
+</html>

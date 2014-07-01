@@ -1,0 +1,18 @@
+<script id="club_template" type="text/template">
+    <div class="layout">
+        <div>
+            <div class="layout horizontal">
+                <div data-layout="primary">
+                    <%=name%><br/>
+                    <%=country%><br/>
+                    Founded: <%=foundedYear%>
+                </div>
+                <div data-layout="primary" style="text-align:center;">
+                    <img style="height:75px;width:75px;" src="<%=image%>" alt="<%=name%>"/>
+                </div>
+            </div>
+        </div>
+        <div data-layout="primary" style="text-align:center;"><br/><%=stadium%>&nbsp;&nbsp;&nbsp;Capacity: <%=stadiumCapacity%><br/><img style="height:225px;width:300px;" src="<%=stadiumImage%>" alt="<%=stadium%>"/>
+        </div>
+    </div>
+</script>

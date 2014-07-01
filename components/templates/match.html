@@ -1,0 +1,34 @@
+<script id="match_template" type="text/template">
+    <li class="thumb">
+    	<div class="layout">
+    		<div data-layout="primary" style="text-align:center;">
+				<%=location%>&nbsp;&nbsp;(<%=datetime%>)
+			</div>
+    		<div>
+    			<div class="layout horizontal">
+					<div data-layout="primary" style="text-align:center;">
+						<%=home_team.country%><br/><%=home_team.goals%>
+					</div>
+					<div data-layout="primary" style="text-align:center;">
+						<%=away_team.country%><br/><%=away_team.goals%>
+					</div>
+				</div>
+			</div>
+			<% if(status == 'future') { %>
+				<div data-layout="primary" style="text-align:center;background-color:#299E43;color:#FFFFFF;">
+					<%=status%>
+				</div>
+			<% } %>
+			<% if(status == 'in progress') { %>
+				<div data-layout="primary" style="text-align:center;background-color:#247281;color:#FFFFFF;">
+					<%=status%>
+				</div>
+			<% } %>
+			<% if(status == 'completed') { %>
+				<div data-layout="primary" style="text-align:center;background-color:#D14536;color:#FFFFFF;">
+					<%=status%>
+				</div>
+			<% } %>
+		</div>
+    </li>
+</script>
