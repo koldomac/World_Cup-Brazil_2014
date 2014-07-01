@@ -10,7 +10,7 @@ For **installation**:
 
 <img src="https://dl.dropboxusercontent.com/u/185610/wordcup/1.png"/>
 
-2-. Use this button: <i class="icon-share"></i>
+2-. Use **share button**
 
 <img src="https://dl.dropboxusercontent.com/u/185610/wordcup/2.png"/>
 
