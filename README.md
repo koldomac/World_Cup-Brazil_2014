@@ -21,4 +21,5 @@ For **installation**:
 <img src="https://dl.dropboxusercontent.com/u/185610/wordcup/3.png"/>
 
 5-. Now, you will see the new icon on your Home Screen
+
 <img src="https://dl.dropboxusercontent.com/u/185610/wordcup/4.png"/>
